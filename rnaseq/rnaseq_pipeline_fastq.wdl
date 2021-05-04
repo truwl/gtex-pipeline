@@ -1,8 +1,8 @@
-import "fastqc.wdl"
-import "star.wdl"
-import "markduplicates.wdl"
-import "rsem.wdl"
-import "rnaseqc.wdl"
+import "fastqc.wdl" as fastqc_wdl
+import "star.wdl" as star_wdl
+import "markduplicates.wdl" as markduplicates_wdl
+import "rsem.wdl" as rsem_wdl
+import "rnaseqc2.wdl" as rnaseqc_wdl
 
 workflow rnaseq_pipeline_fastq_workflow {
 

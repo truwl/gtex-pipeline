@@ -1,8 +1,8 @@
-import "https://api.firecloud.org/ga4gh/v1/tools/broadinstitute_gtex:fastqc_v1-0_BETA/versions/2/plain-WDL/descriptor" as fastqc_wdl
-import "https://api.firecloud.org/ga4gh/v1/tools/broadinstitute_gtex:star_v1-0_BETA/versions/8/plain-WDL/descriptor" as star_wdl
-import "https://api.firecloud.org/ga4gh/v1/tools/broadinstitute_gtex:markduplicates_v1-0_BETA/versions/6/plain-WDL/descriptor" as markduplicates_wdl
-import "https://api.firecloud.org/ga4gh/v1/tools/broadinstitute_gtex:rsem_v1-0_BETA/versions/6/plain-WDL/descriptor" as rsem_wdl
-import "https://api.firecloud.org/ga4gh/v1/tools/broadinstitute_gtex:rnaseqc2_v1-0_BETA/versions/4/plain-WDL/descriptor" as rnaseqc_wdl
+import "fastqc.wdl"
+import "star.wdl"
+import "markduplicates.wdl"
+import "rsem.wdl"
+import "rnaseqc.wdl"
 
 workflow rnaseq_pipeline_fastq_workflow {
 
